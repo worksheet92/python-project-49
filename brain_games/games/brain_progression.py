@@ -1,5 +1,7 @@
 import random
+
 import prompt
+
 
 def brain_progression(username):
     print('What number is missing in the progression?')
@@ -18,11 +20,13 @@ def brain_progression(username):
         rand_element = list_of_num[index]
         list_of_num[index] = '..'
         print(f"Question:{list_of_num}")
-        answer = prompt.string(f'Your answer:')
+        answer = prompt.string('Your answer:')
         if answer == str(rand_element):
             print('Correct!')
         else:
-            print(f"'{answer}' is a wrong answer ;(. Correct answer was '{rand_element}'. Let's try again {username}!")               
+            print(f"'{answer}' is a wrong answer ;(.")
+            print(f"Correct answer was '{rand_element}'.")
+            print(f"Let's try again {username}!")               
             return
         i += 1
     print(f'Congratulations {username}!')
