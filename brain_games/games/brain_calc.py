@@ -3,6 +3,14 @@ import prompt
 import operator
 
 
+def calc(num1, num2, operator):
+    if operator == '+':
+        num1 + num2
+    elif operator == '-':
+        num1 - num2
+    elif operator == '*':
+        num1 * num2     
+
 def brain_calc(username):
     print('What is the result of the expression?')
     i = 0
@@ -12,12 +20,7 @@ def brain_calc(username):
         operators = ['+', '-', '*']
         operator = random.choice(operators)
         print(f'{rand_num1} {operator} {rand_num2}')
-        if operator == '+':
-            result = rand_num1 + rand_num2
-        elif operator == '-':
-            result = rand_num1 - rand_num2
-        elif operator == '*':
-            result = rand_num1 * rand_num2
+        result = calc(rand_num1, rand_num2, operator)
         answer = prompt.string(f"Your answer:")
         if answer == str(result):
             print('Correct!')

@@ -2,7 +2,7 @@ import random
 import prompt
 
 
-def game_even(username):
+def brain_even(username):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0 
     while i < 3:
