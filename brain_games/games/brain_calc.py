@@ -5,11 +5,11 @@ import prompt
 
 def calc(num1, num2, operator):
     if operator == '+':
-        num1 + num2
+        return num1 + num2
     elif operator == '-':
-        num1 - num2
+        return num1 - num2
     elif operator == '*':
-        num1 * num2     
+        return num1 * num2     
 
 
 def brain_calc(username):

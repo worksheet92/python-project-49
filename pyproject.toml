@@ -3,7 +3,7 @@ name = "hexlet-code"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
-version = "0.3.49"
+version = "0.3.51"
 description = "project with fife simple games"
 readme = "README.md"
 requires-python = ">=3.10"
