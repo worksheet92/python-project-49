@@ -21,7 +21,7 @@ def brain_calc(username):
         rand_num2 = random.randint(0, 1000)
         operators = ['+', '-', '*']
         operator = random.choice(operators)
-        print(f'{rand_num1} {operator} {rand_num2}')
+        print(f'Question: {rand_num1} {operator} {rand_num2}')
         result = calc(rand_num1, rand_num2, operator)
         answer = prompt.string("Your answer:")
         if answer == str(result):
