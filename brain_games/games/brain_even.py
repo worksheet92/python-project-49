@@ -25,4 +25,4 @@ def brain_even(username):
             print(f"Let's try again {username}!")
             return
         i += 1
-    print(f'Congratulations, {username}')
+    print(f'Congratulations, {username}!')
