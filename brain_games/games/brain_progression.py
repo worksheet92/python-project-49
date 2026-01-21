@@ -19,7 +19,7 @@ def brain_progression(username):
         index = random.randint(0, len(list_of_num) - 1)
         rand_element = list_of_num[index]
         list_of_num[index] = '..'
-        print(f"Question: {" ".join(list_of_num)}")
+        print(f"Question: {' '.join(map(str, list_of_num))}")
         answer = prompt.string('Your answer:')
         if answer == str(rand_element):
             print('Correct!')
