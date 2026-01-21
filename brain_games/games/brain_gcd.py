@@ -18,7 +18,7 @@ def brain_gcd(username):
     while i < 3:
         rand_num1 = random.randint(0, 100)
         rand_num2 = random.randint(0, 100)
-        print(f'{rand_num1} {rand_num2}')
+        print(f'Question: {rand_num1} {rand_num2}')
         result = find_divisor(rand_num1, rand_num2)   
         answer = prompt.string('Your answer:')
         if answer == str(result):
@@ -26,7 +26,7 @@ def brain_gcd(username):
         else:
             print(f"'{answer}' is a wrong answer ;(.")
             print(f"Correct answer was '{result}'.")
-            print(f"Let's try again {username}!")          
+            print(f"Let's try again, {username}!")          
             return
         i += 1
     print(f'Congratulations, {username}!')
